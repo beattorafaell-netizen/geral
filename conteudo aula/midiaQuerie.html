@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Midia Queries</title>
+  </head>
+  <body>
+    <header>
+      <h2>Midia Queries</h2>
+    </header>
+    <main>
+      <p>
+        Midia Queries são usadas para criar layouts responsivos, ou seja,<br>
+        layouts que se adaptam a diferentes tamanhos de tela.
+      </p>
+      <p>
+        As midia queries são usadas para aplicar estilos diferentes dependendo<br>
+        do tamanho da tela do dispositivo.
+      </p>
+      <p>A sintaxe das midia queries é a seguinte:</p>
+      <pre>
+            @media (condição) {
+                /* estilos */
+            }
+        </pre
+      >
+      <p>
+        A condição pode ser baseada em diferentes características do <br>
+        dispositivo, como largura da tela, altura da tela, orientação,<br>
+        resolução, entre outras.
+      </p>
+      <p>
+        Exemplo de midia query para aplicar estilos diferentes em telas menores<br>
+        que 600px:
+      </p>
+      <pre>
+            @media (max-width: 600px) {
+                /* estilos para telas menores que 600px */
+            }
+        </pre
+      >
+      <pre>
+        📱 Celular  | até 600px         
+        📱 Tablet   | 601px até 1024px  
+        💻 Notebook | 1025px até 1440px 
+        🖥️ Desktop  | 1441px+           
+        </pre
+      >
+      <p>
+        ela funciona no efeito cascata, entao voce so muda o que realmente for<br>
+        mudar, não precisa reescrever o CSS inteiro.
+      </p>
+    </main>
+  </body>
+</html>

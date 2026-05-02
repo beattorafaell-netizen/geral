@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Como pegar fonts</h1>
+    </header>
+    <main>
+        <div>
+            <h2>Por link</h2>
+            <p>Para peagr tem que ir no google fonts, pesquisar a fonte desejada e copiar o link para o HTML.</p>
+            <ol>
+                <li>Ir no google fonts</li>
+                <li>Pesquisar a fonte desejada</li>
+                <li>Clicar na fonte e depois clicar em "select this style"</li>
+                <li>Clicar no icone de link e copiar o link para o HTML</li>
+            </ol>
+            <img src="../IMG/img-menu-font.png" alt="Menu de fontes do Google Fonts">
+            <ol>
+                <li>Vá em "Get embed code"</li>
+            </ol>
+            <img src="../IMG/img-link-font.png" alt="">
+            <ol>
+                <li>escolhe se vai ser link ou import</li>
+                <li> se link: copia e cola no HTML</li>
+                <li> se import: copia e cola no CSS</li>
+            </ol>
+        </div>
+        <div>
+            <h2>Baixando a fonte</h2>
+            <p>Para baixar a fonte tem que ir no google fonts, pesquisar a fonte desejada e clicar no icone de download.</p>
+            <ol>
+                <li>Ir no google fonts</li>
+                <li>Pesquisar a fonte desejada</li>
+                <li>Clicar na fonte e depois clicar em "select this style"</li>
+                <li>Clicar no icone de download e baixar a fonte</li>
+            </ol>
+            <img src="../IMG/img-menu-font.png" alt="Ícone de download de fonte do Google Fonts">
+            <p>Depois de baixar a fonte, tem que descompactar o arquivo e colocar a pasta da fonte dentro do projeto.</p>
+            <p>Depois disso, tem que usar a regra @font-face para declarar a fonte no CSS.</p>
+            <pre>
+                @font-face {
+                    font-family: 'Nome da fonte';
+                    src: url('caminho/para/a/fonte.ttf') format('truetype');
+                }
+            </pre>
+            <p>Depois de declarar a fonte, é só usar o nome da fonte na propriedade font-family para aplicar a fonte no elemento desejado.</p>
+        </div>
+    </main>
+</body>
+</html>

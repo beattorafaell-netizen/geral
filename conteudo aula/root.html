@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root, var()</title>
+</head>
+<body>
+    <header>
+        <h1>Root, var()</h1>
+    </header>
+    <main>
+        <div>
+            <h2>Root</h2>
+            <p>A propriedade :root é um seletor que define variáveis CSS no nível raiz do documento. Ele cria as variaveis globais para o css.</p>
+            <pre>
+                :root {
+                    --cor-principal: #3498db;
+                    --cor-fundo: #111;
+                    --tamanho-titulo: 32px;
+                    --tamanho-texto: 16px;
+                }   
+            </pre>
+            <p>O nome que dara a uma propriedade CSS é o da direira e a propriedade em si é o da esquerda, apos o sinal de igualdade.</p>
+        </div>
+        <div>
+            <h2>var()</h2>
+            <p>A função var() é usada para acessar o valor de uma variável CSS definida com :root.</p>
+            <pre>
+                .elemento {
+                    background-color: var(--cor-principal);
+                    color: var(--cor-fundo);
+                    font-size: var(--tamanho-titulo);
+                }
+            </pre>
+            <p>A função var() permite reutilizar valores de variáveis CSS em diferentes partes do estilo, facilitando a manutenção e atualização do design.</p>
+            <p>É apenas usar o var() e o nome que você nomeou em ":root"</p>
+        </div>
+    </main>
+</body>
+</html>
